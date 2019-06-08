@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Web Form</title>
+</head>
+
+<body>
+  <br>
+  <header>
+    <h1 class="text-center">Project Submission Page</h1>
+  </header>
+  <br>
+
+  <div class="container">
+    <br>
+    <br>
+
+    <form class="needs-validation" id="form" action="/project_create" method="POST" novalidate>
+      <p>Fields are required if not otherwise noted.</p>
+      <hr/>
+
+      <p><b>Student Information (Step 1 of 3)</b></p>
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col">
+            <label for="name">First and Last Name:</label>
+            <input type="text" class="form-control" id="validationCustom01" name="full_name" placeholder="Jane Deaux" required>
+            <div class="invalid-feedback">
+              Please enter first and last name - example "Jane Deaux"
+            </div>
+          </div>
+
+          <div class="col">
+            <label for="validationCustom02">Email:</label>
+            <input type="email" class="form-control" id="validationCustom02" placeholder="random@random.com" required>
+            <div class="invalid-feedback">
+              Please enter valid email - example "random@random.com"
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p><b>Project Details (Step 2 of 3)</b></p>
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col">
+            <label for="form-select">Choose assignment type from drop down menu:</label>
+            <select class="form-control" id="validationCustom02" required>
+              <option></option>
+              <option>Homework Submission</option>
+              <option>Project Submission</option>
+              <option>Portfolio Submission</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select on of the following
+            </div>
+          </div>
+
+
+          <div class="col">
+              <label for="project-difficulty">Please rate project difficulty level with 1 being extremely easy and 10
+                being
+                extremely difficult:</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"
+                  required>
+                <label class="form-check-label" for="inlineRadio1">1</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"
+                  required>
+                <label class="form-check-label" for="inlineRadio2">2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"
+                  required>
+                <label class="form-check-label" for="inlineRadio3">3</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4"
+                  required>
+                <label class="form-check-label" for="inlineRadio4">4</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5"
+                  required>
+                <label class="form-check-label" for="inlineRadio5">5</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6"
+                  required>
+                <label class="form-check-label" for="inlineRadio6">6</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio17"
+                  value="option7" required>
+                <label class="form-check-label" for="inlineRadio7">7</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio8" value="option8"
+                  required>
+                <label class="form-check-label" for="inlineRadio8">8</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio9" value="option9"
+                  required>
+                <label class="form-check-label" for="inlineRadio9">9</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio10"
+                  value="option10" required>
+                <label class="form-check-label" for="inlineRadio10">10</label>
+              </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="project-info">Project Description:</label>
+          <textarea type="text" class="form-control" id="project-info" placeholder="description..." required></textarea>
+          <div class="invalid-feedback">
+            Please complete description
+          </div>
+        </div>
+        <br>
+
+        <div class="form-group">
+          <input type="file" id="real-file" hidden="hidden">
+          <button type="button" class="btn btn-primary btn-sm" id="custom-button">Upload File</button>
+          <span id="custom-text">No file chosen</span>
+        </div>
+      </div>
+
+      <p><b>Class Information (Step 3 of 3)</b></p>
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-8">
+            <label for="name">Subject Name:</label>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="Computer Science" required>
+            <div class="invalid-feedback">
+              Please add subject name - example "Computer Science"
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="form-check">
+              <label for date>Todays Date:</label>
+              <input type="date" name="bday" min="1000-01-01" max="3000-12-31" class="form-control" required>
+              <div class="invalid-feedback">
+                Please enter todays date mm/dd/yyyy
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </form>
+    <br>
+    <br>
+  </div>
+  <br>
+  <br>
+
+  <!-- javaScript -->
+  <script type="text/javascript" src="./javaScript/web-form.js"></script>
+
+</body>
+
+</html>
