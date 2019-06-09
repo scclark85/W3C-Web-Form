@@ -17,7 +17,7 @@
   }, false);
 })();
 
-//JavaScript for custome file upload button
+//custom upload button
 const realFileBtn = document.getElementById("real-file");
 const customBtn = document.getElementById("custom-button");
 const customTxt = document.getElementById("custom-text");
@@ -28,8 +28,13 @@ customBtn.addEventListener("click", function () {
 
 realFileBtn.addEventListener("change", function () {
   if (realFileBtn.value) {
-    customTxt.innerHTML = realFileBtn.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1]; //Cleans up file location name when uploaded.  May not work on all computers.
+    customTxt.innerHTML = realFileBtn.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
   } else {
     customTxt.innerHTML = "No file chosen";
   }
-})
+});
+
+// Output API responses to console
+fetch("http://localhost:3000/students")
+  .then(response => response.json())
+  .then(json => console.log(json))
