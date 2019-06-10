@@ -6,6 +6,7 @@ This project is a responsive web form for users to submit a project and addition
 ## Preview
 ![GitHub Logo](public/image/web-form.png)
 ![GitHub Logo](public/image/incomplete.png)
+![GitHub Logo](public/image/Console.png)
 
 ##
 
