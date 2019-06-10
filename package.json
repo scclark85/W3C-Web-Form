@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "json:server": "json-server --watch db.json",
-    "start": "node server.js"
+    "start": "node json:server"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/scclark85/W3C-Web-Form#readme",
   "dependencies": {
-    "json-server": "^0.15.0"
+    "build": "^0.1.4",
+    "json-server": "^0.15.0",
+    "node": "^12.4.0"
   }
 }
