@@ -31,25 +31,24 @@ input[type=email]:focus {
     }
 
 .form-check input[type=radio]:checked + label[class=form-check-label] { 
-        background-color: lightcoral !important;
-        color: white;
+    background-color: lightcoral !important;
+    color: white;
      }
 
 textarea[type=text]:focus {
-        background-color: lightcoral;
-        color: white;
+    background-color: lightcoral;
+    color: white;
     }
 input[type=date]:focus {
     background-color: lightcoral;
     color: white;
     }
 
-
-button[type=button]:focus {
+input[type=button]:focus {
     background-color: lightcoral;
     }
 
-button[type=submit]:focus {
+input[type=submit]:focus {
     background-color: lightcoral;
 }
 

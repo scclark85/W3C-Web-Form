@@ -28,7 +28,7 @@
     <br>
     <br>
 
-    <form class="needs-validation" id="form" action="/students" method="POST" novalidate>
+    <form class="needs-validation" name="frmForm" id="form" action="/students" method="POST" target="_blank" novalidate>
       <p>Fields are required if not otherwise noted.</p>
       <hr />
 
@@ -141,7 +141,7 @@
 
         <div class="form-group">
           <input type="file" id="real-file" hidden="hidden">
-          <button type="button" class="btn btn-primary btn-sm" name="file" id="custom-button">Upload File</button>
+          <input type="button" class="btn btn-primary btn-sm" name="file" id="custom-button" value="Choose File">
           <span id="custom-text">No file chosen</span>
         </div>
       </div>
@@ -169,8 +169,7 @@
           </div>
         </div>
       </div>
-
-      <button class="btn btn-primary" type="submit" value="Submit">Submit form</button>
+      <input class="btn btn-primary" type="submit" value="Submit Project">
     </form>
     <br>
     <br>

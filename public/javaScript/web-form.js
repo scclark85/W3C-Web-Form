@@ -1,3 +1,4 @@
+
 //JavaScript for disabling form submissions if invalid fields
 (function () {
   'use strict';
@@ -38,3 +39,7 @@ realFileBtn.addEventListener("change", function () {
 fetch("http://localhost:3000/students")
   .then(response => response.json())
   .then(json => console.log(json))
+
+
+
+
