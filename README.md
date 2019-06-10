@@ -17,6 +17,7 @@ HTML, CSS, JavaScript, Bootstrap, JSON Placeholder / rest API for web submission
 ![GitHub Logo](public/image/web-form.png)
 ![GitHub Logo](public/image/incomplete.png)
 ![GitHub Logo](public/image/Console.png)
+Refresh main page to get updated inputs in console.
 
 
 
