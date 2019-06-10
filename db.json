@@ -63,6 +63,16 @@
       "subject": "Coding ",
       "date": "2019-06-10",
       "id": 6
+    },
+    {
+      "name": "Student 7",
+      "email": "random@random.com",
+      "assignment_type": "Portfolio Submission",
+      "difficultyRating": "option3",
+      "description": "Testing 123",
+      "subject": "Math",
+      "date": "2019-06-10",
+      "id": 7
     }
   ]
 }
