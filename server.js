@@ -5,6 +5,8 @@ var students = require('./db.json')
 // Sets an initial port
 const port = process.env.PORT || 3000
 
+app.use(express.static('./public'));
+
 app.get("/students", function (req, res) {
    res.json(students)
   });
