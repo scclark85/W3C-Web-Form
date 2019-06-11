@@ -1,10 +1,10 @@
-const jsonServer = require('json-server');
-const server = jsonServer.create();
-const router = jsonServer.router('./db.json');
-const middlewares = jsonServer.defaults();
-const port = process.env.PORT || 3000;
+var express = require("express");
+var app = express();
 
-server.use(middlewares);
-server.use(router);
+// Sets an initial port
+const port = process.env.PORT || 3000
 
-server.listen(port);
+// Starts server
+app.listen(port, () => {
+  console.log('JSONPlaceholder listening on http://localhost:' + port)
+})
