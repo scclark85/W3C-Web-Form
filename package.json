@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "json:server": "json-server --watch db.json",
-    "start": "npm run json:server"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
