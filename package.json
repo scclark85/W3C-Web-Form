@@ -2,9 +2,10 @@
   "name": "W3C-Web-Form",
   "version": "1.0.0",
   "description": "W3C web-form",
+  "main": "server.js",
   "scripts": {
     "json:server": "json-server --watch db.json",
-    "start": "run-p start:**"
+    "start": "npm run json:server"
   },
   "repository": {
     "type": "git",
