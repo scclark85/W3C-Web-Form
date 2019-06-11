@@ -12,7 +12,7 @@ npm run json:server
 ```
 
 ## Technologies used
-HTML, CSS, JavaScript, Bootstrap, JSON Placeholder / rest API for web submissions.
+HTML, CSS, JavaScript, Bootstrap, Node.js, JSON Placeholder / rest API for web submissions.
 
 ## Preview
 ![GitHub Logo](public/image/web-form.png)
